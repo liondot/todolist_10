@@ -48,7 +48,8 @@ todoForm.addEventListener("submit", handleToDoSubmit);
 
 if(savaToDos !== null) {
   const parsedToDos = JSON.parse(saveToDos);
-  parsedToDos.forEach(sayHello)
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo)
   // parsedToDos.forEach((item) => {
   //   console.log("this is the turn of", item)
   // })
